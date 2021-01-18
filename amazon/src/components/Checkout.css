@@ -1,4 +1,11 @@
 .checkout {
+    margin:10px;
+    display: flex;
+    height: max-content;
+}
+body{
+    background-color: white;
+
 }
 
 .checkout__title {

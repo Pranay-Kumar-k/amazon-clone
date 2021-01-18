@@ -2,11 +2,13 @@ import React from 'react'
 import { useStateValue } from './StateProvider'
 import "./Checkout.css"
 import CheckoutProduct from "./CheckoutProduct"
+import Subtotal from './Subtotal'
 
 function Checkout() {
     const [ {basket} ] = useStateValue()
     return (
         <div className="checkout">
+            <div className="checkout__left">
             <strong>Pay faster for all your shopping needs with Amazon Pay balance</strong><br/>
             <span>Get Instant refund on cancellations | Zero payment failures</span>
             {basket?.length === 0 ? (
@@ -29,6 +31,12 @@ function Checkout() {
                     ))}
                 </div>
             )}
+        </div>
+        {basket.length > 0 && (
+            <div className="checkout__right">
+                <Subtotal />
+            </div>
+        )}
         </div>
     )
 }
