@@ -40,7 +40,7 @@ function Home() {
             </div>
             <div className="home__row">
             
-            <Product id="123456" title="LG 139 cm (55 inches) 4K Ultra HD Smart OLED TV 55CXPTA (Dark Steel Silver) (2020 Model)"
+            <Product id="123456" title="LG 139 cm (55 inches) 4K Ultra HD Smart OLED TV 55CXPTA (Dark Steel Silver) (2020 Model) 4K Ultra HD Smart OLED TV 55CXPTA (Dark Steel Silver) (2020 Model)"
                 price={11}
                 rating={5}
                 image = "https://www.lg.com/in/images/tvs/md06116737/Thumb_350.jpg"
