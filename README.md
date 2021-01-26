@@ -3,7 +3,7 @@ A clone of amazon web application
 
 <h1 align="center">
   <br>
-  <img src="https://www.pngfind.com/pngs/m/56-565024_amazon-logo-png-amazon-png-transparent-png.png" alt="img" width="250">
+  <img src="https://www.bizmonthly.com/wp-content/uploads/2020/04/Amazon-logo-black-template.png" alt="img" width="250">
 </h1>
 
 ## Demo
