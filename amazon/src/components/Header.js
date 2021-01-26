@@ -4,12 +4,19 @@ import "./Header.css"
 import SearchIcon from "@material-ui/icons/Search"
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket"
 import { useStateValue } from './StateProvider'
+import { auth } from './firebase'
 
 
 function Header() {
 
-    const[{basket}] = useStateValue();
-    console.log(basket)
+    const[{basket, user}] = useStateValue();
+    // console.log(basket)
+    const login = () => {
+        if(user) {
+            auth.signOut();
+        }
+    }
+    console.log({user})
 
     return (
         <nav className="header">
@@ -31,21 +38,21 @@ function Header() {
             {/* 3 links */}
             <div className="header__nav">
                 {/* 1st Link */}
-                <Link to="/login" className="header__link">
-                    <div className="header__option">
-                        <span className="header__optionLineOne">Hello Pranay</span>
-                        <span className="header__optionLineTwo" >Sign In</span>
+                <Link to={!user && "/login"} className="header__link">
+                    <div onClick={login} className="header__option">
+                        <span className="header__optionLineOne">Hello {user?.email}</span>
+                        <span className="header__optionLineTwo" >{user ? "Sign Out" : "Sign In"}</span>
                     </div>
                 </Link>
                 {/* 2nd Link */}
-                <Link to="/login" className="header__link">
+                <Link to="/checkout" className="header__link">
                     <div className="header__option">
                         <span className="header__optionLineOne">Returns</span>
                         <span className="header__optionLineTwo">& Orders</span>
                     </div>
                 </Link>
                 {/* 3rd Link */}
-                <Link to="/login" className="header__link">
+                <Link to="/profile" className="header__link">
                     <div className="header__option">
                         <span  className="header__optionLineOne">Your</span>
                         <span className="header__optionLineTwo">Prime</span>

@@ -14,7 +14,6 @@ const  reducer = (state,action) => {
                 ...state,
                 basket:[...state.basket,action.item]
             }
-            break;
         case 'REMOVE_FROM_BASKET':
             // Logic for Removing item from Basket
             let newBasket = [...state.basket]
@@ -30,7 +29,11 @@ const  reducer = (state,action) => {
                 ...state,
                 basket:newBasket
             }
-            break;
+            case "SET_USER" : 
+            return {
+                ...state,
+                user:action.user
+            }
         default:
            return state;
     }
