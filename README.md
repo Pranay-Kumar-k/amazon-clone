@@ -21,7 +21,7 @@ Go checkout the live application <a href="https://clone-50fab.web.app/">Amazon C
 * React-Hooks
 * Firebase Platform
 
-><img height="40" src="https://reactjs.org/logo-og.png">&nbsp;&nbsp;
+><img height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png">&nbsp;&nbsp;
 <img height="40" src="https://www.flaticon.com/svg/static/icons/svg/732/732190.svg">&nbsp;&nbsp;
     <img height="40" src="https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png">&nbsp;&nbsp;
     <img height="40" src="https://raw.githubusercontent.com/alDuncanson/react-hooks-snippets/master/icon.png">&nbsp;&nbsp;
