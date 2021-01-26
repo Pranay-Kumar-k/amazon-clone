@@ -3,12 +3,14 @@ A clone of amazon web application
 
 <h1 align="center">
   <br>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1280px-Amazon_logo.svg.png" alt="img" width="250">
+  <img src="https://www.pinclipart.com/picdir/middle/358-3584545_amazon-web-services-logo-png-transparent-svg-vector.png" alt="img" width="250">
 </h1>
 
 ## Demo
 
 Go checkout the live application <a href="https://clone-50fab.web.app/">Amazon Clone</a>
+
+![Amazon Clone Demo](https://github.com/pranaykumar999/amazon-clone/blob/main/demo/demo.gif)
 
 
 
@@ -50,3 +52,10 @@ npm install
 
 npm start
 ```
+
+
+## Features
+* User can create an account 
+* User can login
+* Can add Items to the cart
+* Can delete Items from the cart
